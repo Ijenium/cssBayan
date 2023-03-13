@@ -36,7 +36,6 @@ body {
 .content-title {
     cursor: pointer;  
     color: rgb(45, 46, 43); 
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -75,6 +74,22 @@ body {
 .image {
     display: flex;
     align-items:center;
+}
+
+@media screen and (max-width: 320px) {
+    .main {       
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .title {
+        font-size: 2rem;
+    }   
+    .body{
+        max-width: 20rem;
+    }
+    .image {
+        max-width: 20rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
