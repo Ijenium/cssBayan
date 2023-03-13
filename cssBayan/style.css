@@ -5,18 +5,53 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     background-color:rgb(214, 218, 218);
     padding-top: 5rem;
     padding-bottom: 2rem;
-    max-width: 60rem;
+    max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .title {
     font-size: 4rem;
     padding-bottom: 2rem;
 }
+
+.content {
+    margin-bottom: 1rem;
+    border: 0.1em solid #a39d9d;
+    border-style: solid none solid none;
+    cursor: pointer;
+}
+
+.content-title:hover {
+    transition: 0.2s;
+    color: rgb(17, 63, 190);  
+    cursor: pointer;
+    
+}
+
+.content-input{
+    appearance: none;
+    width: 0%;
+    height: 0%;
+}
+
+
+.content-input:checked ~ .content-title{
+    color: rgb(17, 63, 190);
+}
+
+.content-input:checked ~ .img-cont{
+    display: block;
+}    
+
+.img-cont {
+    display: none;
+}
+
