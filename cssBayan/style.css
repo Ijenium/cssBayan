@@ -14,7 +14,6 @@ body {
     max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .title {
@@ -23,35 +22,52 @@ body {
 }
 
 .content {
-    margin-bottom: 1rem;
-    border: 0.1em solid #a39d9d;
-    border-style: solid none solid none;
-    cursor: pointer;
+    display: block;
+    transition: 0.2s;
+    border-top: 0.1em solid #a39d9d;
+    cursor: pointer;    
+}
+
+.content-title {
+    cursor: pointer;  
+    color: rgb(45, 46, 43); 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .content-title:hover {
     transition: 0.2s;
-    color: rgb(17, 63, 190);  
-    cursor: pointer;
-    
+    color: rgb(17, 63, 190);   
 }
 
 .content-input{
     appearance: none;
     width: 0%;
     height: 0%;
+    position: absolute;
 }
 
+.img-cont {
+    display: none;
+}
 
 .content-input:checked ~ .content-title{
     color: rgb(17, 63, 190);
 }
 
 .content-input:checked ~ .img-cont{
-    display: block;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding-bottom: 2rem
+    
 }    
 
-.img-cont {
-    display: none;
+.image {
+    display: block;
 }
-
